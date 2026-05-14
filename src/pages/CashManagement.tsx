@@ -82,8 +82,6 @@ export default function CashManagement() {
     debounceRef.current = setTimeout(() => setCashierSearch(val), 500);
   }, []);
 
-  const TABS: Tab[] = ["dashboard", "drawers", "cashout", "transfers", "bank"];
-
   // ── Keyboard shortcuts ─────────────────────────────────────────────────────
   useEffect(() => {
     const anyModalOpen = openDrawerModal || !!closeDrawerModal || !!addCashModal ||

@@ -108,7 +108,7 @@ export default function Bills() {
     lineHeight: "16px", display: "inline-block",
   };
 
-  const { searchRef, rowClassName, onRow, focusedId } = usePageShortcuts({
+  const { rowClassName, onRow, focusedId } = usePageShortcuts({
     onNew: () => {},
     isModalOpen: !!viewId,
     onCloseModal: () => setViewId(null),

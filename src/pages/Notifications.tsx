@@ -5,7 +5,7 @@ import {
 } from "antd";
 import {
   PlusOutlined, CheckOutlined, DeleteOutlined,
-  BellOutlined, WarningOutlined, ReloadOutlined,
+  WarningOutlined, ReloadOutlined,
 } from "@ant-design/icons";
 import { useQuery, useQueryClient, useMutation } from "@tanstack/react-query";
 import { notificationService, storeService } from "../api/services";

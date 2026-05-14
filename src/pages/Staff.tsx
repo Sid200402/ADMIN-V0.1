@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {
   Table, Button, Tag, Tooltip, message, Modal, Form, Input,
-  Select, Popconfirm, Switch, Tabs, Alert,
+  Select, Popconfirm, Switch, Alert,
 } from "antd";
 import {
   PlusOutlined, EditOutlined, DeleteOutlined, EyeOutlined,
@@ -105,7 +105,7 @@ export default function Staff() {
   const items: any[] = listQuery.data?.result || listQuery.data?.data || listQuery.data || [];
 
   const anyModalOpen = createModal || !!editItem || !!viewItem || !!pwdItem || !!permItem;
-  const { rowClassName, onRow, setFocusedId, focusedId } = usePageShortcuts({
+  const { rowClassName, onRow, focusedId } = usePageShortcuts({
     onNew: () => { form.resetFields(); setCreateModal(true); },
     isModalOpen: anyModalOpen,
     onCloseModal: () => { setCreateModal(false); setEditItem(null); setViewItem(null); setPwdItem(null); setPermItem(null); form.resetFields(); },

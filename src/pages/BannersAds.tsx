@@ -5,10 +5,10 @@ import {
 } from "antd";
 import {
   PlusOutlined, EditOutlined, DeleteOutlined, PictureOutlined,
-  CheckOutlined, CloseOutlined, ThunderboltOutlined,
+  CheckOutlined, CloseOutlined,
 } from "@ant-design/icons";
 import { useQuery, useQueryClient, useMutation } from "@tanstack/react-query";
-import { bannersService, productService } from "../api/services";
+import { bannersService } from "../api/services";
 import type { ColumnType } from "antd/es/table";
 
 const fmtDate = (v: string) =>

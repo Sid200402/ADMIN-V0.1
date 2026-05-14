@@ -4,7 +4,7 @@ import {
   SearchOutlined, PlusOutlined, ShoppingCartOutlined,
   EditOutlined, SwapOutlined, ApartmentOutlined,
   BarcodeOutlined, FileExcelOutlined, FilePdfOutlined,
-  DownloadOutlined, UploadOutlined, PictureOutlined,
+  DownloadOutlined, PictureOutlined,
 } from "@ant-design/icons";
 import type { Dayjs } from "dayjs";
 import { useQuery, useQueryClient, keepPreviousData } from "@tanstack/react-query";
