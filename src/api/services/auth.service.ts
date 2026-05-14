@@ -1,6 +1,7 @@
 import api from "../axiosInstance";
 import type { LoginRequest } from "../../types";
 
+//apis
 export const authService = {
   login: (body: LoginRequest) =>
     api.post("/auth/admin/login", body),
