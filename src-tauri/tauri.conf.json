@@ -43,11 +43,6 @@
       "tsp": false,
       "webviewInstallMode": {
         "type": "downloadBootstrapper"
-      },
-      "nsis": {
-        "displayLanguageSelector": false,
-        "languages": ["English"],
-        "installMode": "currentUser"
       }
     }
   }
